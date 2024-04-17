@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Technical Documentation Page</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <header>Java Documentation</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Beginner">Beginner</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Hello_World">Hello World</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Variables">Variables</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#If_Statements">If Statements</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Loops">Loops</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Arrays">Arrays</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Intermediate">Intermediate</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>Java is one of the most popular programming language that was created in 1995, owned by Oracle, Java is a primarily implemented in the C language. Java is in billions of devices today.
+                    <br><br>Used for:
+                    <ul>
+                        <li>Mobile Applications (specially Androids)</li>
+                        <li>Desktop Applications</li>
+                        <li>Web Applications</li>
+                        <li>Games</li>
+                        <li>Database connection</li>
+                    </ul>
+                    And many more!
+                    <br><br><img src="javaexample.png"/>
+                    </p>
+            </section>
+            <section class="main-section" id="Beginner">
+                <header>Beginner</header>
+                <p>To start learning how to program in Java, you should already know the basic's of the internet. 
+                    <br>Be sure to have knowledge in:
+                    <ul>
+                        <li>General understanding of the Internet and Computers</li>
+                        <li>Basic knowledge of Arithmetic math</li>
+                        <li>Navigating files on your Computer</li>
+                        <li>Basic troubleshooting with Computers</li>
+                        <li>Familiarity with Text Editors</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="main-section" id="Hello_World">
+                <header>Hello World</header>
+                <p>To start us of download a Text Editor like VSCode. Text Editors will help you code, format your code and even display/run your code. It is very important to have some knowledge on how to use a Text Editor.
+                    <br>Download Visual Studio Code : 
+                    <br>
+                    <a href="https://code.visualstudio.com/download" style="color: lightskyblue" target="_blank">VSCode</a>
+                    <br>
+                    Run visual studio code, create a folder and a file within it named "main.java". This should get us started with our very first code, display "Hello World" using Java. Use ' System.out.println ' to print/display the code.
+                    <br>
+                    <code>System.out.println("Hello World");</code>
+                </p>
+            </section>
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <p>Variables are containers for storing data values. Think of them as boxes we can store information in, they are one of the pillars of programming.
+                    <br> We will learn primarily these four variables:
+                    <ol>
+                        <li>Integers</li>
+                        <li>Constants</li>
+                        <li>Strings</li>
+                        <li>Booleans</li>
+                    </ol>
+                    <code style="margin-left: 30px">
+                        //To use Variables, use the format (type)(name) = (data);
+                        <br>
+                        int number = 15;
+                        <br>final int firstNumber = 1;
+                        <br>String name = Marc
+                        <br>boolean coinTails = false;
+                        <br>//You can use 'System.out.println(number);' to print the data of your variable
+                    </code>
+                </p>
+            </section>
+            <section class="main-section" id="If_Statements">
+                <header>If Statements</header>
+                <p>If statements are logic statements used in code to perform tasks. They will be our first tool to use, so we can perform basic programs.
+                    <br>We will learn about the two if statements for now, the if and else statements.
+                    <br><code>
+                        //To use these statements we need to think of if statements as code blocks, use if or else then use { put your code inside here }
+                        <br>For example we can use the boolean from the previous example, this code is saying that if coinTails is true execute the code in the if brakcets otherwise execute code in the else brackets.
+                        <br><br>if (coinTails){
+                        <br>   System.out.println("The coin flipped tails");
+                        <br>} else {
+                        <br>   System.out.println("The coin flipped heads"); 
+                        <br>}
+                        <br><br>//Remember you need a boolean statement to trigger the if statement.
+                    </code>
+                </p>
+            </section>
+            <section class="main-section" id="Loops">
+                <header>Loops</header>
+                <p>Loops are very important in programming, unlike Humans, Computers do not get tired and are very quick. For example, a loop where "Hello World" repeats, the Computer will not get tired if they loop saying this, but a Human will. One of the main differences of Computers and Humans. We will talk about the "for" and "while" loop
+                    <br>
+                    <code>
+                        //Just like the if statements, we need a boolean statement, for the while loop to work, the boolean statement has to be true and will loop until it is false.
+                        <br><br>while (boolean){
+                        <br>int i = 0;
+                        <br>System.out.println(i);
+                        <br>i = i + 1;
+                        <br>}
+                        <br><br>for (int i = 0; i < 5; i++) {
+                        <br>System.out.println(i);
+                        <br>}
+                    </code>
+                </p>
+            </section>
+            <section class="main-section" id="Arrays">
+                <header>Arrays</header>
+                <p>Arrays are like storage containters, if we use variables as boxes, we can think of arrays as boxes we can store boxes in.
+                    <code>
+                        //We need to use square brackets for arrays, e.g. int myNum[];
+                        <br>int myNum[] = {1,2,3,4,5};
+                        <br>//myNum contains the elements 1,2,3,4,5. To access these elements we need to put the index in the square bracket, starting at 0
+                        <br>System.out.println(myNum[0]);
+                    </code> 
+                </p>
+            </section>
+            <section class="main-section" id="Intermediate">
+                <header>Intermediate</header>
+            </section>
+        </main>
+    </body>
+</html>

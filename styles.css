@@ -1,0 +1,158 @@
+#navbar{
+    height: 100vw;
+    width:300px;
+    background-color: #074173;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    font-family: sans-serif;
+}
+
+#navbar header{
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+#navbar ul{
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0px;
+}
+
+#navbar li{
+    border-top: 2px solid white;
+    padding-left: 10px;
+}
+
+.nav-link{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#main-doc{
+    background-color: #1679AB;
+    width: calc(100% - 303px);
+    margin-left: 295px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    
+    color: #C5FF95;
+    font-size: 25px;
+}
+
+#main-doc header{
+    color: #5DEBD7;
+    font-size: 60px;
+    padding-left: 10px;
+}
+
+#main-doc p{
+    padding-left: 20px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    line-height: 2;
+    background-color: black;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+p{
+    line-height: 1.3;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        background-color: #074173;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-family: sans-serif;
+        padding: 10px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #navbar header {
+        margin: 0;
+        font-size: 20px;
+        color: white;
+    }
+
+    #navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #navbar li {
+        border-top: none;
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+    }
+
+    #main-doc {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 120px;
+        background-color: #1679AB;
+        color: #C5FF95;
+        font-size: 25px;
+    }
+
+    #main-doc header {
+        font-size: 40px;
+        color: #5DEBD7;
+        padding-left: 10px;
+    }
+
+    #main-doc p {
+        padding-left: 10px;
+        line-height: 1.3;
+    }
+
+    code {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+    }
+}
+
+
+
+
+
